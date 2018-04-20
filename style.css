@@ -55,33 +55,24 @@ body a {
 
 .nav_area {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
     width: 80%;
-    margin:  0 auto;
-
+    margin: 0 auto;
 }
 
 .nav_area section {
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-#biography {
-	background-image: url(image/n-pig.png);
-	background-repeat:no-repeat;
-	background-position: top;
-    box-sizing:  border-box;
+	box-shadow: rgba(153, 153, 153, 0.2) 1px 1px 7px;
+	box-sizing:  border-box;
     padding:  10px;
-	width: 30%;
+	width: 25%;
 	border: 1px solid;
 	border-color: #DDD;
 	background-color: rgba(255, 255, 255, .5);
 }
 
-#biography header {
-    width: 100%;
-    text-align:  center;
-}
 
-#biography h2 {
+.nav_area h3 {
 	width: 100%;
 	height: 50%;
 	text-align: center;
@@ -89,27 +80,66 @@ body a {
 	margin-bottom: 0;
 }
 
-#biography span {
+
+.nav_area section p {
+	padding: 10 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_area p a {
+	color: #ba1820;
+}
+
+.nav_area span a {
+	color: #ba1820;
+}
+
+.nav_area span a:hover {
+	color: #999;
+}
+
+.nav_area ul a {
+	color: #ba1820;
+}
+
+.nav_area ul a:hover {
+	color: #999;
+}
+
+.nav_area header a {
 	display: flex;
+	color: #999;
 	margin-top: 2px;
 	font-style: italic;
 	justify-content: center;
 	align-items: center;
 }
 
-#biography p {
-	padding: 10 0;
-	margin-left: auto;
-	margin-right: auto;
+.nav_area a:hover {
+	color: #ba1820;
 }
 
-.first_par a {
-	color: red;
+.nav_area p a:hover {
+	color: #999;
 }
+
+#biography {
+	background-image: url(image/n-pig.png);
+	background-repeat:no-repeat;
+	background-position: top;
+}
+
+#biography header {
+    width: 100%;
+    text-align:  center;
+}
+
+
 
 #biography p:first-letter {
-	color: #FF193F;
-	font-size: 75px;	
+	color: #ba1820;
+	font-size: 65px;	
 }
 
 .label {
@@ -120,12 +150,67 @@ body a {
 
 #journal {
 	width: 25%;
+	padding: 10px;
+	background-image: url(image/n-butterfly.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#journal header {
+	width: 100%;
+	text-align: center;
+}
+
+#journal p {
+	text-align: justify;
+}
+
+.music_2014 {
+	float: left;
+	padding-left: 2rem;
+}
+
+.fs {
+	padding-bottom: 20px;
+	color: #ba1820;
+	font-size: 65px;
+	float: left;
 }
 
 #archive {
 	width: 25%;
+	padding: 10px;
+	background-image: url(image/n-bigfish.png);
+	background-repeat:no-repeat;
+	background-position: top;
+}
+
+#archive ul {
+	list-style-type: none;
+	padding-bottom: 1rem;
+	float: left;
 }
 
 #contact {
 	width: 25%;
+	padding: 10px;
+	background-image: url(image/n-crab.png);
+	background-repeat:no-repeat;
+	background-position: top;
+}
+
+#contact p {
+	text-align: justify;
+	float: left;
+}
+
+
+.opinions {
+	float: left;
+	padding-left: 10px;
+}
+
+.opinions:first-letter {
+	color: #ba1820;
+	font-size: 65px;		
 }
