@@ -282,3 +282,10 @@ body a {
 	background-position: top;
 	box-sizing: border-box;
 }
+
+
+
+@media (min-device-width: 1024px;) and (max-width: 989px;) {
+
+	
+}
