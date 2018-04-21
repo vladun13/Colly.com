@@ -36,7 +36,7 @@ body a {
 }
 
 .site_content {
-	transition: 	
+	/*transition: 	*/
 }
 
 #logo {
@@ -106,7 +106,7 @@ body a {
 	color: #999;
 }
 
-.nav_area header a {
+.strap a {
 	display: flex;
 	color: #999;
 	margin-top: 2px;
@@ -215,11 +215,70 @@ body a {
 }
 
 .ext-dests {
-	display: block;
 	margin-top: 60px;
 	padding: 2rem;
 	background-image: url(image/ext-refs.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 -30px;
+}
+
+.nav_content {
+	display: flex;
+	justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav_content ul {
+	display: flex;
+	width: 100%;
+	list-style-type: none;
+	box-shadow: rgba(153, 153, 153, 0.2) 1px 1px 7px;
+	box-sizing:  border-box;
+	border: 1px solid;
+	border-color: #DDD;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.nav_content ul li {
+	display: inline-block;
+}
+
+.nav_content h3 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom:0;
+}
+
+#delicious {
+	width: 25%;
+    padding: 10px;
+	background-image: url(image/n-beetle.png);
+	background-position: top;
+	box-sizing: border-box;
+}
+
+#instagram {
+	width: 25%;
+    padding: 10px;
+	background-image: url(image/fish-2.png);
+	background-position: top;
+	box-sizing: border-box;
+}
+
+#sayhi {
+	width: 25%;
+    padding: 10px;
+	background-image: url(image/n-collie.png);
+	background-position: top;
+	box-sizing: border-box;
+}
+
+#twitter {
+	width: 25%;
+    padding: 10px;
+	background-image: url(image/n-reptile.png);
+	background-position: top;
+	box-sizing: border-box;
 }
