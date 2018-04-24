@@ -350,11 +350,11 @@ body a {
 }
 
 footer {
-	padding-top: 70px;
-	margin-bottom: -10px;
+	padding-top: 150px;
+	margin-bottom: 0px;
 	margin-top: 10px;
 	width: 100%;
-	bottom: 0;
+	/*bottom: 0;*/
 	background-image: url(image/deranged.png);
 	background-repeat: no-repeat;
 	background-size:  100%;
