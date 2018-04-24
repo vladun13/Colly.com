@@ -6,15 +6,17 @@ body {
 	font-family: "Times New Roman", Times, Cambria, serif;
 	font-size: 12px;
 	line-height: 22px;
+    margin-bottom:50px;
 }
 
 body a {
 	text-decoration: none;
 }
 
+
 .banner {
 	background-color: black;
-	position: fixed;
+	position: absolute;
 	width: calc(100% - 16px);
 	color: white;
 	padding: 5px 0;
@@ -61,8 +63,8 @@ body a {
 .nav_area section {
 	box-shadow: rgba(153, 153, 153, 0.2) 1px 1px 7px;
 	box-sizing: border-box;
-    padding: 4px;
-    padding-bottom: 0px;
+    padding: 0;
+    margin: 0;
 	width: 25%;
 	border: 2px solid;
 	border-color: #DDD;
@@ -70,22 +72,27 @@ body a {
 }
 
 .nav_area section h3 {
-	width: 100%; 
-	height: 150px; 
-	text-align: center;
+	width: 100%;
+	height: 45px;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 0px;
 	background-position: top;
 	background-repeat: no-repeat;
-
+	text-align:center;
+	padding:2px 0 105px 0;
+	padding-top: 0;
+	font-size:12px;
+	font-weight:normal;
+	font-style:normal;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#000;
 }
 
-
 .nav_area section p {
-	padding: 0;
-	margin-left: auto;
-	margin-right: auto;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav_area p a {
@@ -136,7 +143,7 @@ body a {
 
 #biography p:first-letter {
 	color: #ba1820;
-	font-size: 65px;
+	font-size: 60px;
 	float: left;
 }
 
@@ -157,6 +164,7 @@ body a {
 
 #journal p {
 	text-align: justify;
+	padding:  4px;
 }
 
 .music_2014 {
@@ -182,9 +190,9 @@ body a {
 }
 
 #contact {
-	width: calc(100% / 4 - 2 * 3px);
-	padding: 0px;
-	
+	width: calc(100% / 4 - 2 * 4px);
+	padding: 8px;
+	padding-top: 0;
 }
 
 #contact h3 {
@@ -226,10 +234,10 @@ body a {
 
 .nav_content ul {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 	padding: 0;
-	height: 200px;
 	list-style-type: none;
 	box-shadow: rgba(153, 153, 153, 0.2) 1px 1px 7px;
 	box-sizing:  border-box;
@@ -240,7 +248,14 @@ body a {
 }
 
 .nav_content ul li {
-	border: 1px solid #999;
+	height: 200px;
+	border: 2px solid;
+	border-color: #DDD;
+	background-color: rgba(255, 255, 255, .5);
+	background-repeat: no-repeat;
+	background-position: top;
+	box-sizing: border-box;
+	margin-bottom: 2px;
 }
 
 .nav_content h3 {
@@ -250,37 +265,100 @@ body a {
 }
 
 #delicious {
-	width: 24%;
+	width: 25%;
 	padding: 10px;
 	background-image: url(image/n-beetle.png);
-	background-repeat: no-repeat;
-	background-position: top;
-	box-sizing: border-box;
 }
 
 #instagram {
 	width: 25%;
     padding: 10px;
 	background-image: url(image/n-fish2.png);
-	background-repeat: no-repeat;
-	background-position: top;
-	box-sizing: border-box;
 }
 
 #sayhi {
 	width: 25%;
     padding: 10px;
 	background-image: url(image/n-collie.png);
-	background-repeat: no-repeat;
-	background-position: top;
-	box-sizing: border-box;
 }
 
 #twitter {
-	width: 25%;
+	width: calc(100% / 4 - 2 * 4px);
     padding: 10px;
+	background-image: url(image/n-salamander.png);
+}
+
+#gimmebar {
+	width: 25%;
+	background-image: url(image/n-wasp.png);
+}
+
+#dribbble {
+	width: 25%;
 	background-image: url(image/n-reptile.png);
-	background-position: top;
+}
+
+#flickr {
+	width: 25%;
+	background-image: url(image/n-flea.png);
+}
+
+#naconf {
+	width: calc(100% / 4 - 2 * 4px);
+	background-image: url(image/n-puffer.png);
+}
+
+#rdio {
+	width: 25%;
+	background-image: url(image/n-rabbit.png);
+}
+
+#facebook {
+	width: 25%;
+	background-image: url(image/n-snake.png);
+}
+
+#zerply {
+	width: 25%;
+	background-image: url(image/n-fishfeet.png);
+}
+
+#foursquare {
+	width: calc(100% / 4 - 2 * 4px);
+	background-image: url(image/n-cormorant.png);
+}
+
+#lastfm {
+	width: 25%;
+	background-image: url(image/n-fish3.png);
+}
+
+#slideshare {
+	width: 25%;
+	background-image: url(image/n-lobster.png);
+}
+
+#lanyrd {
+	width: 25%;
+	background-image: url(image/n-grasshopper.png);
+}
+
+#vimeo {
+	width: calc(100% / 4 - 2 * 4px);
+	background-image: url(image/n-tortoise.png);
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background-image: url(image/deranged.png);
 	background-repeat: no-repeat;
-	box-sizing: border-box;
+	position: fixed;
+	padding: 145px 0px 0px 150px;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
