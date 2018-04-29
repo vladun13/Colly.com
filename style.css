@@ -7,7 +7,7 @@ body {
 	font-family: "Times New Roman", Times, Cambria, serif;
 	font-size: 12px;
 	line-height: 22px;
-    margin-bottom:50px;
+	margin-bottom:50px;
 }
 
 body a {
@@ -57,15 +57,17 @@ body a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .nav_area section {
 	box-shadow: rgba(153, 153, 153, 0.2) 1px 1px 7px;
-    margin: 0 10 0 0;
+	line-height:  18px;
+	/* margin: 0px 10px 0px 0px; */
 	width: 24%;
-	/*width: 207px;*/
+	/* height:  275px; */
+	/* width: 207px; */
 	border: 1px solid;
 	border-color: #DDD;
 	background-color: rgba(255, 255, 255, .5);
@@ -78,6 +80,7 @@ header {
 
 
 .nav_area section p {
+	margin:  0px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -105,7 +108,7 @@ header {
 .strap a {
 	display: flex;
 	color: #999;
-	margin-top: 2px;
+	margin-top: 5px;
 	font-style: italic;
 	justify-content: center;
 	align-items: center;
@@ -124,24 +127,29 @@ header {
 }
 
 
-#biography p:first-letter {
+.nav_area section p:first-letter {
 	color: #ba1820;
 	font-size: 60px;
 	float: left;
+	vertical-align: top;
+	height: 65px;
+	line-height: 1;
+	padding-right: 5px;
 }
 
 .label {
+	background-position-y: -40px;
 	font-size: 15px;
 	padding-top: 8px;
 	font-style: normal;
 	width: 100%;
-	height: 45px;
-	margin-top: 0;
+	/* height: 20px; */
+	margin-top: 5px;
 	margin-bottom: 0;
-	background-position: top;
+	/* background-position: top; */
 	background-repeat: no-repeat;
 	text-align:center;
-	padding:2px 0 105px 0;
+	padding: 0px 0px 105px 0px;
 	padding-top: 0;
 	font-weight:normal;
 	font-style:normal;
@@ -152,23 +160,19 @@ header {
 
 #journal h3 {
 	background-image: url(image/n-butterfly.png);
+	/* background-position-y: -40px; */
 }
 
 #journal p {
 	text-align: justify;
 	padding:  4px;
+	/* vertical-align: top; */
 }
 
-.music_2014 {
-	float: left;
-	padding-left: 2rem;
-}
-
-.fs {
-	padding-bottom: 20px;
-	color: #ba1820;
-	font-size: 65px;
-	float: left;
+#music_2014 {
+	/* float: left; */
+	/* padding-left: 2rem; */
+	vertical-align: top;
 }
 
 #archive h3 {
@@ -176,13 +180,14 @@ header {
 }
 
 #archive nav ul {
+	padding-left: 10px;
 	list-style-type: none;
 	padding-bottom: 1rem;
 	float: left;
 }
 
 #contact {
-	width: calc(100% / 4 - 2 * 4px);
+	/* width: calc(100% / 4 - 2 * 4px); */
 	padding-top: 0;
 }
 
@@ -195,16 +200,6 @@ header {
 	float: left;
 }
 
-
-.opinions {
-	float: left;
-	padding-left: 10px;
-}
-
-.opinions:first-letter {
-	color: #ba1820;
-	font-size: 65px;		
-}
 
 .ext-dests {
 	margin-top: 30px;
@@ -239,6 +234,7 @@ header {
 }
 
 .nav_content ul li {
+	width: 25%;
 	height: 200px;
 	border: 2px solid;
 	border-color: #DDD;
@@ -256,20 +252,17 @@ header {
 }
 
 #delicious {
-	width: 25%;
 	padding: 10px;
 	background-image: url(image/n-beetle.png);
 }
 
 #instagram {
-	width: 25%;
-    padding: 10px;
+	padding: 10px;
 	background-image: url(image/n-fish2.png);
 }
 
 #sayhi {
-	width: 25%;
-    padding: 10px;
+	padding: 10px;
 	background-image: url(image/n-collie.png);
 }
 
@@ -280,17 +273,14 @@ header {
 }
 
 #gimmebar {
-	width: 25%;
 	background-image: url(image/n-wasp.png);
 }
 
 #dribbble {
-	width: 25%;
 	background-image: url(image/n-reptile.png);
 }
 
 #flickr {
-	width: 25%;
 	background-image: url(image/n-flea.png);
 }
 
@@ -300,17 +290,14 @@ header {
 }
 
 #rdio {
-	width: 25%;
 	background-image: url(image/n-rabbit.png);
 }
 
 #facebook {
-	width: 25%;
 	background-image: url(image/n-snake.png);
 }
 
 #zerply {
-	width: 25%;
 	background-image: url(image/n-fishfeet.png);
 }
 
@@ -320,17 +307,14 @@ header {
 }
 
 #lastfm {
-	width: 25%;
 	background-image: url(image/n-fish3.png);
 }
 
 #slideshare {
-	width: 25%;
 	background-image: url(image/n-lobster.png);
 }
 
 #lanyrd {
-	width: 25%;
 	background-image: url(image/n-grasshopper.png);
 }
 
@@ -356,8 +340,8 @@ footer p {
     margin-bottom: 0px;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 600px) and (orientation: portrait) {
-	.banner {width: auto}
-	.nav_area section {width: 100%}
-	.nav_content li {width: 50%}
+@media screen and (min-width: 480px) and (max-width: 600px) {
+	.banner {width: auto;}
+	.nav_area section {width: 100%;}
+	.nav_content li {width: 50%;}
 }
