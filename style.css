@@ -384,6 +384,7 @@ footer p a {
 		body {width: 100%;}
 		.banner {width: 100%;}
     	.nav_area section {width: 95%;}
+    	.label {background-position: 80px -40px;}
 		.nav_content ul li {width: 95%;}
 		footer {width: 100%;}
     } 
